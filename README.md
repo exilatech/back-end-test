@@ -4,10 +4,15 @@
 ##### Node.js
 ##### MongoDB
 
-### Apis:
+### Wb Api list:
 
 #### Add Beer [POST]:
  http://localhost:3005/beer/add
+ 
+{"name":String,
+"type":String,
+"rating":Number
+}
 
 #### Update Rating [POST]:
   http://localhost:3005/beer/updateRating
