@@ -27,6 +27,7 @@
 
 #### Get Beer by search string [POST]:
   http://localhost:3005/beer/get
+  
   {
   "search":String
   }
