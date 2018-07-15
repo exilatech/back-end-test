@@ -16,9 +16,17 @@
 
 #### Update Rating [POST]:
   http://localhost:3005/beer/updateRating
+  
+  {
+  "name":String,
+  "rating":Number
+  }
 
 #### Get list of Beers [GET]:
   http://localhost:3005/beer/getAll
 
 #### Get Beer by search string [POST]:
   http://localhost:3005/beer/get
+  {
+  "search":String
+  }
