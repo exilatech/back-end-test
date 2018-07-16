@@ -109,8 +109,10 @@ exports.updateRating = function (req, res) {
 
 //getting Beer records
 exports.getBeers = function (req, res) {
-    var queryParams = req.body;
+    var queryParams = req.query;
+    // var queryParams = req.body;
     var querryString = queryParams["search"];
+    console.log("querryString =" + querryString + ", queryParams=" + queryParams)
     if (querryString == null || querryString == ''){
         querryString = "";
     }

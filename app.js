@@ -18,7 +18,7 @@ router.get('/', function (req, res) { res.json({ "info": "al+++__ive5-api landin
 
 router.post('/beer/add', beer.addBeer);
 router.post('/beer/updateRating', beer.updateRating);
-router.post('/beer/getBeers', beer.getBeers);
+router.get('/beer/getBeers', beer.getBeers);
  
 app.use(express.static('static'));
 app.use('/', router); // required base url

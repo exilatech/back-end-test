@@ -15,7 +15,7 @@
 
 Note: it is assumend that the user has already started the mongoDB on the system.
 
-### Wb Api list:
+### Web Api list:
 
 #### Add Beer [POST]:
  http://localhost:3005/beer/add
@@ -34,11 +34,8 @@ Note: it is assumend that the user has already started the mongoDB on the system
   }
 
 
-#### Get Beer by search string [POST]:
-  http://localhost:3005/beer/getBeers
-  
-  {
-  "search":String
-  }
+#### Get Beer by search string [GET]:
+  http://localhost:3005/beer/getBeers?search=<String>
 
-Note: It will return all the record if the payload is emoty or the 'search' paramter has empty value.
+
+Note: It will return all the records if the url does not contains the 'search' parameter 
