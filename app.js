@@ -14,16 +14,11 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 3005;
 var router = express.Router();
 
-//backMiddleware.inject(app, router);
 router.get('/', function (req, res) { res.json({ "info": "al+++__ive5-api landing page v1.1.0" }) });
+
 router.post('/beer/add', beer.addBeer);
 router.post('/beer/updateRating', beer.updateRating);
-// router.post('/beer/update', beer.updateBeer);
-router.get('/beer/getAll', beer.getBeerList);
-router.post('/beer/get', beer.getBeerByName);
-
-
-
+router.post('/beer/getBeers', beer.getBeers);
  
 app.use(express.static('static'));
 app.use('/', router); // required base url
