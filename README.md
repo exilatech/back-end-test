@@ -18,16 +18,16 @@
   http://localhost:3005/beer/updateRating
   
   {
-  "name":String,
+  "id":String,
   "rating":Number
   }
 
-#### Get list of Beers [GET]:
-  http://localhost:3005/beer/getAll
 
 #### Get Beer by search string [POST]:
-  http://localhost:3005/beer/get
+  http://localhost:3005/beer/getBeers
   
   {
   "search":String
   }
+
+Note: It will return all the record if the payload is emoty or the 'search' paramter has empty value.
